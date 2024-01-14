@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  client:
+    image: vikramsingh2580/my-typescript-app:my-typescript-app
+    build: Dockerfile
+    ports:
+      - "8080:80"
+    # networks:
+    #   - vknetwork
+
+# networks:
+#   vknetwork:
